@@ -28,6 +28,16 @@
 
         </div>
 
+        <div v-if="showUser" class="user">
+
+            <ul>
+                <li>Email: {{user.email}}</li>
+                <li>Password: {{user.password}}</li>
+            </ul>
+
+        </div>
+
+
     </div>
 
     <script>
