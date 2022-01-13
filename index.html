@@ -18,6 +18,15 @@
 
     <div id="app">
 
+
+        <div class="nav">
+
+            <button v-on:click="getLessons">Lessons</button>
+
+            <button v-on:click="getUser">User</button>
+
+        </div>
+
         <div v-if="showLessons" class="lessons">
 
             <ul v-for="lesson in lessons">
