@@ -26,13 +26,31 @@
             el: '#app',
             data: {
 
-                
+
             },
 
             methods: {
 
+                getLessons: function () {
 
+                    fetch('http://localhost:3000/lessons')
+                        .then(
+                            function (response) {
 
+                                response.json().then(
+
+                                    function (json) {
+
+                                        vueapp.lessons = json
+
+                                    }
+                                )
+                            }
+                        )
+
+                    this.showLessons = true;
+                    this.showUser = false;
+                }
             }
         })
 
