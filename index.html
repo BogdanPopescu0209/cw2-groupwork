@@ -18,6 +18,16 @@
 
     <div id="app">
 
+        <div v-if="showLessons" class="lessons">
+
+            <ul v-for="lesson in lessons">
+                <li>Topic: {{lesson.topic}}</li>
+                <li>Location: {{lesson.location}}</li>
+                <li>Price: {{lesson.price}}</li>
+            </ul>
+
+        </div>
+
     </div>
 
     <script>
