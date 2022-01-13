@@ -11,6 +11,10 @@ app.get('/lessons', function(request, response){
        ])
 })
 
+app.get('/user', function(request, response){
+    response.send({'email': 'user@email.com', 'password':'mypassword'})
+})
+
 app.use(function (request, response){
     response.status(404).send("Page Not Found!")
 })
