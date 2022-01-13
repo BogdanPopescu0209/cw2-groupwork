@@ -50,6 +50,27 @@
 
                     this.showLessons = true;
                     this.showUser = false;
+                },
+
+                getUser: function () {
+
+                    fetch('http://localhost:3000/user')
+                        .then(
+                            function (response) {
+
+                                response.json().then(
+
+                                    function (json) {
+
+                                        vueapp.user = json
+
+                                    }
+                                )
+                            }
+                        )
+
+                    this.showUser = true;
+                    this.showLessons = false;
                 }
             }
         })
