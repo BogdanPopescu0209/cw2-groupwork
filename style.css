@@ -1,0 +1,18 @@
+ul {
+    display: inline-block;
+    border: 5px solid aqua;
+    padding: 30px;
+    margin: 20px;
+ }
+
+.lessons{
+    margin-left: 450px;
+}
+
+.user{
+    margin-left: 780px;
+}
+
+.nav{
+    margin-left: 850px;
+}
